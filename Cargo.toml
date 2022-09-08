@@ -1,10 +1,10 @@
 [package]
 name = "pincer"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2021"
 description = "Generate permutations & combinations"
 repository = "https://github.com/sheumais/pincer"
 license = "MIT"
-keywords = ["permutations", "combinations"]
+keywords = ["permutations", "combinations", "patterns"]
 
 [dependencies]
