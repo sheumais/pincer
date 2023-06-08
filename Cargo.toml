@@ -1,10 +1,13 @@
 [package]
 name = "pincer"
-version = "1.0.0"
+version = "2.0.0"
 edition = "2021"
 description = "Generate permutations & combinations"
 repository = "https://github.com/sheumais/pincer"
 license = "MIT"
 keywords = ["permutations", "combinations", "patterns"]
-
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+]
 [dependencies]

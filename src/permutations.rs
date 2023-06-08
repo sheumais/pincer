@@ -5,8 +5,9 @@
 /// 
 /// ### Example
 /// ```
+/// use pincer::permutations::at_length;
 /// for s in at_length(3, vec!['a', 'b', 'c']) {
-///    println!("{}", s);
+///    println!("{}", s); // prints aaa, aab ... ccc
 /// }
 /// ```
 #[allow(dead_code)]
@@ -28,8 +29,9 @@ pub fn at_length(len: u32, elements: Vec<char>) -> impl Iterator<Item = String> 
 /// 
 /// ### Example
 /// ```
+/// use pincer::permutations::to_length;
 /// for s in to_length(3, vec!['a', 'b', 'c']) {
-///    println!("{}", s);
+///    println!("{}", s); // prints a, b, c, aa, ab ... cc, aaa, aab ... ccc
 /// }
 /// ```
 #[allow(dead_code)]
@@ -41,8 +43,9 @@ pub fn to_length(len: u32, elements: Vec<char>) -> impl Iterator<Item = String> 
 /// 
 /// ### Example
 /// ```
+/// use pincer::permutations::from_minimum;
 /// for s in from_minimum(2, 3, vec!['a', 'b', 'c']) {
-///    println!("{}", s);
+///    println!("{}", s); // prints aa, ab ... cc, aaa, aab ... ccc
 /// }
 /// ```
 #[allow(dead_code)]
